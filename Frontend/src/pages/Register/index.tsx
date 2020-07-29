@@ -33,7 +33,7 @@ const Register: React.FC = () => (
                 <Button type="submit">Cadastrar</Button>
 
             </form>
-            <a href="register">
+            <a href="/">
                 <FiArrowLeft />
                     Voltar para Loggon</a>
         </Content>
