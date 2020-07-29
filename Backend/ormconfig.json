@@ -6,9 +6,9 @@
     "password": "17a105314a",
     "database": "babershop",
     "migrations": [
-        "./src/database/migrations/*.ts"
+        "./src/database/migrations/*entity.ts"
     ],
     "cli":{
-        "migrationsDir":"./src/database/migrations"
+        "migrationsDir":"./src/database/migrations/"
     }
 }

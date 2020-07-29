@@ -1,4 +1,4 @@
-import Appointment from '../models/Appointment'
+import Appointment from '../models/Appointment.entity'
 import { isEqual } from 'date-fns';
 
 interface CreateAppointmentDTO {

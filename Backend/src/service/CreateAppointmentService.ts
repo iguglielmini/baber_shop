@@ -1,4 +1,4 @@
-import Appointment from '../models/Appointment'
+import Appointment from '../models/Appointment.entity'
 import { startOfHour } from 'date-fns';
 import AppointmentsRepository from '../repositories/AppointmentsRepository'
 
