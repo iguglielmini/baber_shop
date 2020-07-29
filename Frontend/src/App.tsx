@@ -4,11 +4,11 @@ import React from 'react';
 import GlobalStyle from './styles/global';
 // ROutes
 import SignIn from './pages/Signin';
-
+import Register from './pages/Register';
 
 const App: React.FC = () => (
   <>
-    <SignIn />
+    <Register />
     <GlobalStyle />
   </>
 );

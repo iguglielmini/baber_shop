@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import SignInBackgroundImg from '../../assets/sign-in-background.png';
+import RegisterBackgroundImg from '../../assets/register-background.png';
 import { shade } from 'polished';
 
 
@@ -38,7 +38,7 @@ export const Content = styled.div`
         }
    }
    > a {
-        color: #ff9000;
+        color: #f4ede8;
         display: block;
         margin-top: 24px;
         text- decoration: none;
@@ -52,13 +52,13 @@ export const Content = styled.div`
         }
 
         &:hover{
-            color: ${shade(0.2, '#ff9000')};
+            color: ${shade(0.2, '#f4ede8')};
         }
    }
 
 `;
 export const Background = styled.div`
     flex: 1;
-    background: url(${SignInBackgroundImg}) no-repeat center;
+    background: url(${RegisterBackgroundImg}) no-repeat center;
     background-size: cover;
 `;
