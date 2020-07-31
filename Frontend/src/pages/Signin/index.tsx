@@ -5,35 +5,39 @@ import Button from '../../components/Button'
 
 import LogoImg from '../../assets/logo.svg'
 import { Container, Content, Background } from './styles';
+import FadeIn from 'react-fade-in';
 
 const SignIn: React.FC = () => (
-    <Container>
-        <Content>
-            <img src={LogoImg} alt="Go Baber" />
-            <form>
-                <h1>Faça seu Loggon</h1>
+    <FadeIn>
+        <Container>
+            <Content>
+                <img src={LogoImg} alt="Go Baber" />
+                <form>
+                    <h1>Faça seu Loggon</h1>
 
-                <Input
-                    name="email"
-                    placeholder="E-mail"
-                    icon={FiMail}
-                />
-                <Input
-                    name="password"
-                    type="password"
-                    placeholder="Senha"
-                    icon={FiLock}
-                />
-                <Button type="submit">Entrar</Button>
+                    <Input
+                        name="email"
+                        placeholder="E-mail"
+                        icon={FiMail}
+                    />
+                    <Input
+                        name="password"
+                        type="password"
+                        placeholder="Senha"
+                        icon={FiLock}
+                    />
+                    <Button type="submit">Entrar</Button>
 
-                <a href="/forgot">Esqueci minha senha</a>
-            </form>
-            <a href="/register">
-                <FiLogIn />
+                    <a href="/forgot">Esqueci minha senha</a>
+                </form>
+                <a href="/register">
+                    <FiLogIn />
                     Criar conta</a>
-        </Content>
-        <Background />
-    </Container>
+            </Content>
+            <Background />
+
+        </Container>
+    </FadeIn>
 );
 
 export default SignIn;

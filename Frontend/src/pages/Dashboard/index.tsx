@@ -1,13 +1,18 @@
 import React from 'react';
-import { 
+import DayPicker from 'react-day-picker';
+import 'react-day-picker/lib/style.css';
+import {
     Container,
-     Header, 
-     HeaderContent,
-     Profiler, 
-     Content, 
-     Schedule, 
-     NextAppointment,
-    Calendar } from './styles';
+    Header,
+    HeaderContent,
+    Profiler,
+    Content,
+    Schedule,
+    NextAppointment,
+    Section,
+    Appointment,
+    Calendar
+} from './styles';
 
 import { FiPower, FiClock } from 'react-icons/fi';
 
@@ -53,8 +58,50 @@ const Dashboard: React.FC = () => (
                         </span>
                     </div>
                 </NextAppointment>
+                <Section>
+                    <strong>Manhã</strong>
+                    <Appointment>
+                        <span>
+                            <FiClock />
+                            08:00
+                        </span>
+                        <div>
+                        <img src="https://avatars2.githubusercontent.com/u/40302558?s=460&u=7f200d54b1e5537ad66dddaafa277c29f2bdcc2c&v=4" alt="Italo Guglielmini" />
+                        <strong>Italo Guglielmini</strong>
+                        </div>
+                    </Appointment>
+                </Section>
+                <Section>
+                    <strong>Tarde</strong>
+                    <Appointment>
+                        <span>
+                            <FiClock />
+                            16:00
+                        </span>
+                        <div>
+                        <img src="https://avatars1.githubusercontent.com/u/14861271?s=460&u=2d8801d6fe35d36f884cbb0ff20d845456f237cc&v=4" alt="Isaac Henrique" />
+                        <strong>Isaac Henrique</strong>
+                        </div>
+                    </Appointment>
+                </Section>
+                <Section>
+                    <strong>Noite</strong>
+
+                    <Appointment>
+                        <span>
+                            <FiClock />
+                            19:00
+                        </span>
+                        <div>
+                        <img src="https://avatars1.githubusercontent.com/u/55547066?s=460&u=71c3ad6cbfc1a812d33080725131abe6b152935b&v=4" alt="Telson Urtiga" />
+                        <strong>Telson Urtiga</strong>
+                        </div>
+                    </Appointment>
+                </Section>
             </Schedule>
-            <Calendar />
+            <Calendar>
+                <DayPicker/>
+            </Calendar>
         </Content>
     </Container>
 

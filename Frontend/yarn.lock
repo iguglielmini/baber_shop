@@ -1644,6 +1644,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-fade-in@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@types/react-fade-in/-/react-fade-in-0.1.0.tgz#281367aa13b970762d4020cd4e69b52cfc3bdb3f"
+  integrity sha512-rUbU6MiO2I6itt4RLPeIs83C2J+/KD2p3XKXk816pXdw09DxDlm3U/HeHqjQUUjBS5AaIz1zPmg/0JuZkOCn/w==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-native@*":
   version "0.63.2"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.63.2.tgz#428a4d71351ccbc31ab170b5f32477c7ce78dfd7"
@@ -9336,6 +9343,13 @@ react-app-polyfill@^1.0.6:
     raf "^3.4.1"
     regenerator-runtime "^0.13.3"
     whatwg-fetch "^3.0.0"
+
+react-day-picker@^7.4.8:
+  version "7.4.8"
+  resolved "https://registry.yarnpkg.com/react-day-picker/-/react-day-picker-7.4.8.tgz#675625240d3fae1b41c0a9d5177c968c8517c1d4"
+  integrity sha512-pp0hnxFVoRuBQcRdR1Hofw4CQtOCGVmzCNrscyvS0Q8NEc+UiYLEDqE5dk37bf0leSnBW4lheIt0CKKhuKzDVw==
+  dependencies:
+    prop-types "^15.6.2"
 
 react-dev-utils@^10.2.1:
   version "10.2.1"
