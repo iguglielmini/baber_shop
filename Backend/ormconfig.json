@@ -4,9 +4,13 @@
     "port": 5432,
     "username": "postgres",
     "password": "17a105314a",
-    "database": "babershop",
+    "database": "barbershop",
+    "entities":[
+        "./src/models/*.ts"
+    ],
+
     "migrations": [
-        "./src/database/migrations/*entity.ts"
+        "./src/database/migrations/*.ts"
     ],
     "cli":{
         "migrationsDir":"./src/database/migrations/"

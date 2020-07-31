@@ -1,34 +1,33 @@
-import { Router } from 'express';
-import { parseISO } from 'date-fns';
-import AppointmentsRepository from '../repositories/AppointmentsRepository';
-import CreateAppointmentService from '../service/CreateAppointmentService';
-
+import { Router } from "express";
+import { parseISO } from "date-fns";
+import { getCustomRepository } from "typeorm";
+import AppointmentsRepository from "../repositories/AppointmentsRepository";
+import CreateAppointmentService from "../service/CreateAppointmentService";
 
 const appointmentsRouter = Router();
-const appointmentsRepository = new AppointmentsRepository();
 
-
-appointmentsRouter.get('/', (request, response) => {
-    const appointments = appointmentsRepository.all();
+appointmentsRouter.get("/", async (request, response) => {
+    const appointmentsRepository = getCustomRepository(AppointmentsRepository);
+    const appointments = await appointmentsRepository.find();
 
     return response.json(appointments);
 });
 
-appointmentsRouter.post('/', (request, response) => {
+appointmentsRouter.post("/", async (request, response) => {
     try {
         const { provider, date } = request.body;
-
+    
         const parsedDate = parseISO(date);
+    
+        const createAPpointment = new CreateAppointmentService();
 
-        const createAPpointment = new CreateAppointmentService(appointmentsRepository);
-
-        const appointment = createAPpointment.execute({
+        const appointment = await createAPpointment.execute({
             date: parsedDate,
-            provider
+            provider,
         });
         return response.json(appointment);
     } catch (err) {
-        return response.status(400).json({ error: err.message })
+        return response.status(400).json({ error: err.message });
     }
 });
 
