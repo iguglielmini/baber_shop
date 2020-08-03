@@ -1,10 +1,11 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-// ROutes
+// Routes
 import SignIn from '../pages/Signin';
-import Register from '../pages/Register';
 import Forget from '../pages/Forget';
+import Profile from '../pages/Profile';
+import Register from '../pages/Register';
 import Dashboard from '../pages/Dashboard';
 
 const Routes: React.FC = () =>(
@@ -13,6 +14,7 @@ const Routes: React.FC = () =>(
         <Route path="/register"  component={Register}/>
         <Route path="/forgot"  component={Forget}/>
         <Route path="/dashboard"  component={Dashboard}/>
+        <Route path="/profile"  component={Profile}/>
     </Switch>
 );
 
