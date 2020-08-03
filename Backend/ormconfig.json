@@ -4,7 +4,7 @@
     "port": 5432,
     "username": "postgres",
     "password": "17a105314a",
-    "database": "barbershop",
+    "database": "barber",
     "entities":[
         "./src/models/*.ts"
     ],
