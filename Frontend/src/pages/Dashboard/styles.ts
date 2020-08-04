@@ -12,19 +12,38 @@ export const HeaderContent = styled.div`
   margin: 0 auto;
   display: flex;
   align-items: center;
-
-  > img {
-    height: 80px;
+  .content-logo-profile {
+    display: flex;
+    align-items: center;
+    > img {
+      height: 80px;
+    }
   }
-  button {
+  .nav-btns {
     margin-left: auto;
-    background: transparent;
-    border: 0;
+    display: flex;
+    align-items: center;
 
-    svg {
-      color: #999591;
-      width: 20px;
-      height: 20px;
+    a{
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      transition: .4s all ease-in;
+      &:hover{
+        color: #ff9000;
+      }
+    }
+
+    button {
+      background: transparent;
+      border: 0;
+      margin-left: 15px;
+
+      svg {
+        color: #999591;
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 `;

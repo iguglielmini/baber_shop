@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import RegisterBackgroundImg from "../../assets/register-background.png";
 import { shade } from "polished";
 
 export const Container = styled.div`

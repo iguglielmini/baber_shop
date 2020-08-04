@@ -35,22 +35,34 @@ const Dashboard: React.FC = () => {
             <Container>
                 <Header>
                     <HeaderContent>
-                        <img src={logoImg} alt="Baber Shop" />
+                        <div className="content-logo-profile">
+                            <img src={logoImg} alt="Baber Shop" />
 
-                        <Profiler>
-                            <img src="https://avatars2.githubusercontent.com/u/40302558?s=460&u=7f200d54b1e5537ad66dddaafa277c29f2bdcc2c&v=4" alt="Italo Guglielmini" />
-                            <div>
-                                <span>Bem-vindo</span>
-                                <Link to="/profile">
-                                    <strong>Ítalo Guglielmini</strong>
-                                </Link>
-                            </div>
-                        </Profiler>
-                        
-                        <button type="button">
-                            <FiPower />
-                        </button>
+                            <Profiler>
+                                <img
+                                    src="https://avatars2.githubusercontent.com/u/40302558?s=460&u=7f200d54b1e5537ad66dddaafa277c29f2bdcc2c&v=4"
+                                    alt="Italo Guglielmini"
+                                />
+                                <div>
+                                    <span>Bem-vindo</span>
+                                    <Link to="/profile">
+                                        <strong>Ítalo Guglielmini</strong>
+                                    </Link>
+                                </div>
+                            </Profiler>
+                        </div>
 
+                        <div className="nav-btns">
+                            <Link to="/agenda">
+                                Agenda
+                            </Link>
+                            <Link to="/agenda">
+                                Históricos
+                            </Link>
+                            <button type="button">
+                                <FiPower />
+                            </button>
+                        </div>
                     </HeaderContent>
                 </Header>
 
