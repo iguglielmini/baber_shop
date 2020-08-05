@@ -1,31 +1,37 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
-    background: #232129;
-    border-radius: 10px;
-    border: 2px solid #232129;
-    padding: 16px;
-    width: 100%;  
-    color: #F4EDE8;
-    display: flex;
-    align-items: center;
-    color: #666360;
-    
-    & + div{
-        margin-top: 8px;
-    }
-    input{
-        flex:1;
-        background: transparent;
-        border:0;
-        color: #fff;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  color: #f4ede8;
+  color: #666360;
+  position: relative;
+  border-radius: 10px;
+  align-items: center;
+  background-color: #232129;
+  border: 2px solid transparent;
 
+  &.error {
+    border-color: #FF0000;
+  }
 
-        &::placeholder{
-            color: #666360;
-        }
+  & + div {
+    margin-top: 8px;
+  }
+
+  input {
+    flex: 1;
+    border: unset;
+    color: #FFFFFF;
+    background: transparent;
+
+    &::placeholder {
+      color: #666360;
     }
-    svg{
-        margin-right: 16px;
-    }
+  }
+
+  svg {
+    margin-right: 16px;
+  }
 `;
